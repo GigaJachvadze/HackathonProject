@@ -1,0 +1,24 @@
+._mainBody_ {
+    background-color: rgb(50, 50, 50);
+    margin: 0;
+    height: 500vh;
+}
+
+._mainImageContainer_ {
+    margin: auto;
+}
+
+._mainImageContainer_ > img {
+    display: block;
+    margin: auto;
+    height: 100vh;
+}
+
+._innerPage_ {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    width: 65%;
+    height: 500vh;
+    background-color: rgb(200, 200, 200);
+}
