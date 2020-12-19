@@ -30,6 +30,7 @@
     padding: 20px 100px;
     display: flex;
     flex-direction: column;
+    background-color: #323232;
 }
 
 .title1 {
@@ -82,4 +83,23 @@ a {
 hr {
     color: #5f1c1d;
     width: 1px;
+}
+
+.a {
+    font-size: 13px;
+    padding: 7px 0px;
+    background-color: #323232;
+}
+
+.dato123 {
+    background-color: #7d0d0d;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: #d4bebe;
+    // background-color: #4e151a;
+    border: 1px solid #4e151a;
+    margin: 0px 15px;
+    font-weight: bolder;
 }
