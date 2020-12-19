@@ -1,0 +1,32 @@
+<div *ngIf="!loading" style="margin: auto; display: flex; align-content: center; justify-content: center; flex-direction: column;">
+
+    <div style="text-align: center;">
+        <h3 style="color: white;">Total cases:</h3>
+        <h3 style="color: white; opacity: 0.6;">{{data.Global.TotalConfirmed}}</h3>
+        <div style="height: 1px; background-color: black;"></div>
+        <h3 style="color: white;">Total deaths:</h3>
+        <h3 style="color: red;">{{data.Global.TotalDeaths}}</h3>
+        <div style="height: 1px; background-color: black;"></div>
+        <h3 style="color: white;">Total recovered:</h3>
+        <h3 style="color: green;">{{data.Global.TotalRecovered}}</h3>
+    </div>
+
+    <select style="width: 25%; margin: auto;" #option (change)="selectChanged()" >
+        <option *ngFor="let country of data.Countries">{{country.Country}}</option>
+    </select>
+
+    <div style="text-align: center;">
+        <h3 style="color: white;">Total cases in {{currentDisplay.Country}}:</h3>
+        <h3 style="color: white; opacity: 0.6;">{{currentDisplay.TotalConfirmed}}</h3>
+        <div style="height: 1px; background-color: black;"></div>
+        <h3 style="color: white;">Total deaths in {{currentDisplay.Country}}:</h3>
+        <h3 style="color: red;">{{currentDisplay.TotalDeaths}}</h3>
+        <div style="height: 1px; background-color: black;"></div>
+        <h3 style="color: white;">Total recovered in {{currentDisplay.Country}}:</h3>
+        <h3 style="color: green;">{{currentDisplay.TotalRecovered}}</h3>
+    </div>
+</div>
+
+<div *ngIf="loading" style="display: flex; align-content: center; margin: auto; width: auto; justify-content: center;">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>

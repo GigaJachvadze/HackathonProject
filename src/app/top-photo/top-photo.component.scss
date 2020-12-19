@@ -1,0 +1,11 @@
+._mainImageContainer_ {
+    margin: auto;
+}
+
+._mainImageContainer_>img {
+    display: block;
+    margin: auto;
+    // height: 100vh;
+    width: 100%;
+    height: auto;
+}
