@@ -8,6 +8,7 @@ import { TopPhotoComponent } from './top-photo/top-photo.component';
 import { TopPageComponent } from './top-page/top-page.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MiddlePageComponent } from './middle-page/middle-page.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     TopPhotoComponent,
     TopPageComponent,
     StatisticsComponent,
+    MiddlePageComponent,
   ],
   imports: [
     BrowserModule,

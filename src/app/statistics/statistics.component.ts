@@ -31,19 +31,23 @@ export class StatisticsComponent implements OnInit {
 
   getLocation() {
     this.http.get(this.apiUrlLocation).subscribe((res) => {
-      this.locationData = res;
-      this.locationData = this.locationData.country;
-      this.loadingLocation = false;
-      this.checkLoading();
+      if (res) {
+        this.locationData = res;
+        this.locationData = this.locationData.country;
+        this.loadingLocation = false;
+        this.checkLoading();
+      }
     });
   }
 
   getBaseData() {
     this.http.get(this.apiUrlCovid).subscribe((res) => {
-      this.data = res;
-      console.log(res)
-      this.loadingData = false;
-      this.checkLoading();
+      if (res) {
+        this.data = res;
+        console.log(res)
+        this.loadingData = false;
+        this.checkLoading();
+      }
     });
   }
 
